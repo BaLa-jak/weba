@@ -115,6 +115,7 @@
 
 .contenedorimagen > img{
   margin-top: 30px;
+  margin-right: 100px;
   height: auto;
   width: 30%;
 }
