@@ -1,0 +1,108 @@
+.titulo {
+    color: green;
+    margin: 0;
+  }
+  
+  
+  div.cabecero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+    background-color: white; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+  
+  
+  nav.navegador {
+    display: flex;
+    justify-content: flex-end; 
+    list-style-type: none;
+  }
+  
+  nav.navegador > a {
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  nav.navegador > a:hover {
+    padding: 5px 10px;
+    background-color: rgb(12, 146, 12);
+    box-shadow: 2px 2px 5px black;
+    color: white;
+  }
+  
+  
+  
+
+  .mainpage {
+    text-align: center;
+    font-size: 3.5em;
+  }
+  
+  .buttonMain {
+    color: white;
+    padding: 15px;
+    background-color: green;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 45vw;
+    margin-right: 35vw;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .buttonMain:hover {
+    background-color: rgb(12, 146, 12);
+    box-shadow: 2px 2px 5px black;
+  }
+
+  .pie{
+    padding: 10px;
+    background-color: rgb(248, 248, 248)
+  }
+
+  .pie > p{
+    font-size: 1.5em;
+    text-align:center ;
+    padding-top: 10px;
+  }
+
+  .pie>ul{
+    display: flex;
+    justify-content: end;
+  }
+
+  .pie > ul>li{
+    list-style: none;
+    margin: 5px;
+    padding:7px;
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    
+
+  }
+
+  .pie > ul>li:hover{
+    background-color: rgb(12, 146, 12);
+    box-shadow: 2px 2px 5px black;
+    color: white;
+
+  }
+  
