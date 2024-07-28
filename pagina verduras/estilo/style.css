@@ -1,122 +1,161 @@
 .titulo {
-    color: green;
-    margin: 0;
-  }
-  
-  
-  div.cabecero {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px;
-    background-color: white; 
-    z-index: 1000; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-  }
-  
-  
-  nav.navegador {
-    display: flex;
-    justify-content: flex-end; 
-    list-style-type: none;
-  }
-  
-  nav.navegador > a {
-    text-decoration: none;
-    margin: 5px;
-    padding: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: black;
-    border-radius: 5px;
-    text-align: center;
-    z-index: 1000;
-  }
-  
-  nav.navegador > a:hover {
-    padding: 5px 10px;
-    background-color: rgb(12, 146, 12);
-    box-shadow: 2px 2px 5px black;
-    color: white;
-  }
-  
-  
-  
+  color: green;
+  margin: 0;
+}
 
-  .mainpage {
-    text-align: center;
-    font-size: 3.5em;
-  }
-  
-  .buttonMain {
-    color: white;
-    padding: 15px;
-    background-color: green;
-    border-radius: 10px;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 45vw;
-    margin-right: 35vw;
-    transition: background-color 0.3s, box-shadow 0.3s;
-  }
-  
-  .buttonMain:hover {
-    background-color: rgb(12, 146, 12);
-    box-shadow: 2px 2px 5px black;
-  }
+div.cabecero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-  .pie{
-    padding: 10px;
-    background-color: rgb(248, 248, 248);
-  }
+nav.navegador {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
 
-  .pie > p{
-    font-size: 1.5em;
-    text-align:center ;
-    padding-top: 10px;
-  }
+nav.navegador > a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1000;
+}
 
-  .pie>ul{
-    display: flex;
-    justify-content: end;
-  }
+nav.navegador > a:hover {
+  padding: 5px 10px;
+  background-color: rgb(12, 146, 12);
+  box-shadow: 2px 2px 5px black;
+  color: white;
+}
 
-  .pie > ul>li{
-    list-style: none;
-    margin: 5px;
-    padding:7px;
-    font-size: 2em;
-    color: black;
-    text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    
+.mainpage {
+  text-align: center;
+  font-size: 3.5em;
+}
 
-  }
+.buttonMain {
+  color: white;
+  padding: 15px;
+  background-color: green;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 45vw;
+  margin-right: 35vw;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
 
-  .pie > ul>li:hover{
-    background-color: rgb(12, 146, 12);
-    box-shadow: 2px 2px 5px black;
-    color: white;
+.buttonMain:hover {
+  background-color: rgb(12, 146, 12);
+  box-shadow: 2px 2px 5px black;
+}
 
-  }
+.pie {
+  padding: 10px;
+  background-color: rgb(248, 248, 248);
+}
 
-.contenedorimagen{
+.pie > p {
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.pie > ul {
+  display: flex;
+  justify-content: end;
+}
+
+.pie > ul > li {
+  list-style: none;
+  margin: 5px;
+  padding: 7px;
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.pie > ul > li:hover {
+  background-color: rgb(12, 146, 12);
+  box-shadow: 2px 2px 5px black;
+  color: white;
+}
+
+.contenedorimagen {
   flex: 1;
   cursor: pointer;
 }
 
-
-
-.contenedorimagen > img{
+.contenedorimagen > img {
   margin-top: 30px;
   margin-right: 100px;
   height: auto;
   width: 30%;
 }
 
+.contenedorTarjetas{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 60px; 
+  justify-content: center; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.tarjetas {
+  border: 1px solid lightgray;
+  text-align: center;
+  border-radius: 10%;
+  box-shadow: 0 0 8px lightslategray;
+  flex: 1 1 200px; 
+  max-width: 150px;
+  max-height: 250px;
+ padding: 0px 10px 10px 10px;
+  
+   
+}
+
+.tarjetas > img {
+  margin-top: 5px;
+  width: 50%;
+  height: 40%;
+}
+
+.botonesTarjeta {
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.botonesTarjeta:hover {
+  scale: 1.2;
+  background-color: green;
+  box-shadow: 0 0 10px lightgray;
+  color: white;
+}
