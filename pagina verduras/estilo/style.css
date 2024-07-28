@@ -50,6 +50,7 @@ nav.navegador > a {
 }
 
 nav.navegador > a:hover {
+  text-align: center;
   padding: 5px 10px;
   background-color: rgb(12, 146, 12);
   box-shadow: 2px 2px 5px black;
@@ -57,6 +58,7 @@ nav.navegador > a:hover {
 }
 
 .mainpage {
+  padding-top: 30px;
   text-align: center;
   font-size: 3.5em;
 }
