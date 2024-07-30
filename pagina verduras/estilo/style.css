@@ -139,6 +139,13 @@ nav.navegador > a:hover {
   height: auto;
   width: 30%;
   box-shadow: 0 0 10px black;
+  transition: all;
+  transition-duration: 0.7s;
+}
+
+.contenedorimagen > img:hover{
+  scale: 1.1;
+  
 }
 
 .contenedorTarjetas{
