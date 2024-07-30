@@ -200,7 +200,7 @@ nav.navegador > a:hover {
 .contenedorBuscar{
   display: flex;
   justify-content: center;
-  
+
 }
 
 .buscar{
@@ -217,4 +217,14 @@ nav.navegador > a:hover {
   background-color: lightgray;
   border-radius: 15px;
   color: green;
+}
+
+.categoriaProd{
+  text-align: left;
+  margin-left: 100px;
+  font-family: "Mulish", sans-serif;
+  font-size: xx-large;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
