@@ -160,6 +160,7 @@ nav.navegador > a:hover {
   max-height: 250px;
  padding: 0px 10px 10px 10px;
  font-family: "Mulish", sans-serif;
+ margin-left: 20px;
 }
 
 .tarjetas >p {
@@ -195,4 +196,25 @@ nav.navegador > a:hover {
   background-color: green;
   box-shadow: 0 0 10px lightgray;
   color: white;
+}
+.contenedorBuscar{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.buscar{
+  margin-top: 80px;
+  margin-left: 7px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid lightgray;
+}
+
+.IconoBuscar{
+  margin-top: 80px;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 15px;
+  color: green;
 }
