@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="/estilos/styles.css">
+    <link rel="stylesheet" href="estilos/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -12,8 +12,7 @@
     <h1 class="titulo-main">Formulario</h1>
 
     <form method="get" autocomplete="on">
-        <fieldset>
-
+        <fieldset class="marco">
         <label for="name">Nombre</label><br>
         <input type="text" name="Nombre" id="name" placeholder="Escribe tu nombre" class="inp-nombre" required="true">
         <br/>
@@ -48,11 +47,8 @@
         <input type="tel" name="telefono" id="phone" placeholder="Escribe tu telefono" class="telefono"><br/>
 
             <br/>
-        <input type="submit" value="Enviar">
-
-
-
-        </fieldset>
+        <input type="submit" value="Enviar" class="enviar">
+    </fieldset>
     </form>
 
 </body>
