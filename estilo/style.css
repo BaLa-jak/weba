@@ -1,20 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.titulo-main{
-    text-align: center;
-    font-weight: bolder;
+body{
+    background-color:rgb(30, 30, 66) ;
+
 }
 
-.pag-info{
-    text-align: center;
-    font-size: 1.5em;
+.navbar{
+    background-color: rgb(13, 28, 51);
+    padding: 0.8em;
+
     
 }
 
-.supmark{
-    text-decoration: none;
-    color: black;
+.paginas{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.paginas>li{
+    list-style: none;
+
+}
+
+.paginas >li >a {
     padding: 10px;
-    background-color: rgb(42, 224, 139);
-    border-radius: 10px;
+    background-color: rgb(30, 111, 233);
+    border-radius: 7px;
+    text-decoration: none;
+    margin: 5px;
+    float: right;
+    color: whitesmoke;
+    font-family: "Inter", sans-serif;
+}
+.paginas >li >a :hover{
+    box-shadow: 0 0 10px wheat;
+
+
+}
+
+.logo{
+    font-size: 8vh;
+    color:rgb(133, 166, 216);
+}
+
+
+
+.saludo{
+    font-family: "Inter", sans-serif;
+    font-size: small;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.maintext{
+    display: grid;
+    justify-content: center;
+}
+
+.nombre{
+    font-family: "Inter", sans-serif;
+    color: whitesmoke;
+}
+
+.span{
+    font-family: "Inter", sans-serif;
+    color: whitesmoke;
+    
     
 }
+
+.trabajo{
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    color: whitesmoke;
+    padding: 10px;
+    background-color: rgb(30, 111, 233);
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+.trabajo:hover{
+    background-color: rgb(48, 94, 163);
+    box-shadow: 0 0 7px rgb(204, 178, 130);
+    
+}
+
