@@ -14,30 +14,31 @@ body{
 html{
     height: auto;
     min-height: 100%;
-    font-family: "Roboto", sans-serif;
 }
 
 form{
     display: flex;
     justify-content: center;
-    backdrop-filter: blur(10px);
+
 }
 
 .titulo-main{
     text-align: center;
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 .marco{
-    border: 5px solid black;
+    border: none;
     border-radius: 30px;
-    box-shadow: 0 0 20px white;
+    box-shadow:0 0 20px white;
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: transparent;
-    
+    position: relative;
+    backdrop-filter: blur(10px);
+     
 }
 
 input{
@@ -46,6 +47,7 @@ input{
     border-radius: 10px;
     font-family: "Kanit", sans-serif;
     cursor: pointer;
+    z-index: 1000;
 }
 
 input:focus {
