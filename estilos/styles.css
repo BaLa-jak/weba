@@ -20,6 +20,7 @@ html{
 form{
     display: flex;
     justify-content: center;
+    backdrop-filter: blur(10px);
 }
 
 .titulo-main{
@@ -35,6 +36,8 @@ form{
     padding-right: 200px;
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: transparent;
+    
 }
 
 input{
@@ -42,6 +45,7 @@ input{
     border: none;
     border-radius: 10px;
     font-family: "Kanit", sans-serif;
+    cursor: pointer;
 }
 
 input:focus {
@@ -62,6 +66,16 @@ input[type="submit"], input[type="button"] {
     padding: 10px 20px;  
     border-radius: 10px;
     cursor: pointer;  
+}
+
+input[type="submit"]:hover{
+    scale: 1.1;
+    box-shadow: 0 0 10px;
+}
+
+input[type="submit"]:active{
+    background-color: rgb(16, 68, 68);
+
 }
 
 
@@ -88,20 +102,20 @@ label{
     font-family: "Kanit", sans-serif;
 }
 
-.enviar{
+.opciones{
     padding: 10px;
     border: none;
     border-radius: 10px;
-    background-color: black;
-    color: white;
-    box-shadow: 0 0 10px;
+    transition: 0.3s ease;
     cursor: pointer;
-    transition-duration: 0.7s;
-    font-family: "Kanit", sans-serif;
+    
 }
 
-.enviar:hover{
-    scale: 1.2;
+.opciones:focus{
+    border-color: #33c; 
+    outline: none;  
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);  
+    transform: scale(1.05);  
 }
 
 
