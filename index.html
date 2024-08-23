@@ -9,25 +9,26 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1 class="titulo-main">Formulario</h1>
+    <h1 class="titulo-main">Biblioteca</h1>
 
     <form method="get" autocomplete="on">
         <fieldset class="marco">
-        <label for="name">Nombre</label><br>
+        <label for="name">Nombre completo</label><br>
         <input type="text" name="Nombre" id="name" placeholder="Escribe tu nombre" required="true">
         <br/>
 
         <br/>
-        <label for="last-name">Apellido</label><br>
-        <input type="text" name="apeliido" id="last-name" placeholder="Escribe tu apellido" required="true"> <br/>
+        <label for="Expediente">Expediente</label><br/>
+        <input type="number" name="Expediente" id="Expediente" placeholder="Escribe tu expediente" required="true"><br/>
         <br/>
-            <label for="Expediente">Expediente</label><br/>
-            <input type="number" name="Expediente" id="Expediente" placeholder="Escribe tu expediente" required="true"><br/>
-            <br/>
 
-        <label for="date">Fecha de hoy</label><br/>
-        <input type="date" name="date" id="date"> <br/>
+        <label for="mail">Correo</label><br/>
+        <input type="email" name="correo" id="mail" placeholder="Escribe tu correo" required="true"> <br/>
         <br/>
+
+        <label for="phone">Numero de telefono</label><br/>
+        <input type="tel" name="telefono" id="phone" placeholder="Escribe tu telefono" class="telefono"><br/>
+        <br>
 
         <label for="libro">Libro</label><br>
         <select name="libro" id="book" class="opciones">
@@ -42,7 +43,6 @@
         </select><br>
 
         <br>
-
         <label for="campus">Campus</label><br>
         <select name="campus" id="campus" class="opciones">
             <option value="Campus,Hermosillo">Campus, Hermosillo</option>
@@ -51,19 +51,28 @@
             <option value="Campus,Navojoa">Campus, Navojoa</option>
             <option value="Campues,SLRC">Campues, SLRC</option>
         </select>
-        <br>
-
-        <br>
-        <label for="mail">Correo</label><br/>
-        <input type="email" name="correo" id="mail" placeholder="Escribe tu correo" required="true"> <br/>
         <br/>
 
+        <br/>
+        <label for="date">Fecha de recogida</label><br/>
+        <input type="date" name="date" id="date"> <br/>
 
-        <label for="phone">Numero de telefono</label><br/>
-        <input type="tel" name="telefono" id="phone" placeholder="Escribe tu telefono" class="telefono"><br/>
+        <br/>
+        <label for="prestamo">Duracion del prestamo</label><br>
+        <select name="prestamo" id="loan" class="opciones">
+            <option value="1 semana">1 semana</option>
+            <option value="2 semanas">2 semanas</option>
+            <option value="3 semanas">3 semanas</option>
+        </select><br>
 
-            <br/>
-        <input type="submit" value="Enviar" class="enviar">
+        <br/>
+        <input type="submit" value="Enviar" class="enviar"><br>
+       
+        <br>
+        <textarea name="comentarios" id="comments" rows="5" cols="30"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Enviar comentarios" class="enviar">
     </fieldset>
     </form>
 
