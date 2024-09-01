@@ -14,14 +14,14 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    padding: 6.25rem;
     margin-left: 30%;
     margin-right: 30%;
     flex-wrap: wrap;
     flex-direction: column;
     position: relative;
     box-shadow: 0 0 10px wheat;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     background-color: white;
 }
 
@@ -43,15 +43,15 @@ body{
     transform: translateY(50%);
     transform: translateX(50%);
     border: 3px solid blue;
-    box-shadow: 0 0 7px black;
+    box-shadow: 0 0 0.4rem black;
     border-radius: 100%;
 }
 
 .icon{
     position: relative;
-    top: 4.9vh; 
-    left: 2vh;
-    font-size: 4.1vh;
+    top: 3.4vh; 
+    left: 1.5vh;
+    font-size: 3vh;
     z-index: 1;
 }
 
@@ -59,9 +59,9 @@ body{
     position: relative;
     align-items: center;
     border:2px solid rgb(69, 69, 221);
-    padding: 10px;
+    padding: 0.625rem;
     padding-left:7vh;
-    border-radius: 15px;
+    border-radius: 0.93rem;
     transition-duration: 0.3s;
     
 }
@@ -73,13 +73,10 @@ body{
 }
 
 .login-input:hover{
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 0.625rem black;
 
 }
 
-.login-input:focus{
-    border: 2px solid azure;
-}
 
 .link-forgot{
     position: relative;
@@ -95,8 +92,8 @@ body{
     margin-top: 3.4vh;
     border: none;
     background-color: #3498db;;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 0.625rem;
+    padding: 0.313rem;
     color: white;
     transition-duration: 0.3s;
     font-weight: bold;
@@ -106,7 +103,7 @@ body{
 .button-login:hover{
     cursor: pointer;
     scale: 1.1;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 0.313rem black;
 }
 
 
