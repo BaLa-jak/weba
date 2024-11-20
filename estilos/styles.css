@@ -121,4 +121,24 @@ label{
     transform: scale(1.05);  
 }
 
+.boton-enviar{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    font-family: "Kanit",sans-serif;
+    border: none;
+    font-size: 1rem;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.boton-enviar:hover{
+    cursor: pointer;
+    scale: 1.05;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);  
+
+}
 
