@@ -1,104 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-body{
-    background-color:rgb(30, 30, 66) ;
-
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.navbar{
-    position: fixed;
-    background-color: rgb(13, 28, 51);
-    padding: 0.8em;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 0 15px;
-    
-}
-
-.paginas{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.paginas>li{
-    list-style: none;
-
-}
-
-.paginas >li >a {
-    padding: 10px;
-    border-radius: 7px;
-    text-decoration: none;
-    margin: 5px;
-    float: right;
-    color: whitesmoke;
-    font-family: "Inter", sans-serif;
-    transition-duration: 0.3s;
-}
-.paginas >li >a:hover{
-    box-shadow: 0 0 10px wheat;
-    background-color: rgb(30, 111, 233);
-    scale: 1.2;
-
-
-}
-
-.logo{
-    font-size: 8vh;
-    color:rgb(133, 166, 216);
-    transition-duration: 0.3s;
-}
-
-.logo:hover{
-    scale: 1.2;
-}
-
-
-
-.saludo{
-    font-family: "Inter", sans-serif;
-    font-size: small;
-    font-weight: bolder;
-    color: whitesmoke;
-}
-
-.maintext{
-    margin-top: 200px;
+/* Contenedor principal */
+.container {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+    background-color: #141414;
+    height: 100vh;
+}
+
+/* Estilos generales para las tarjetas */
+.card {
+    background: linear-gradient(135deg, #3f2b96, #a8c0ff);
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.nombre{
-    font-family: "Inter", sans-serif;
-    color: whitesmoke;
+.card.large {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #1f1f1f, #667eea);
 }
 
-.span{
-    font-family: "Inter", sans-serif;
-    color: whitesmoke;
-    
-    
+.card-content {
+    max-width: 80%;
 }
 
-.trabajo{
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p, a {
+    font-size: 16px;
+    color: #ccc;
     text-decoration: none;
-    font-family: "Inter", sans-serif;
-    color: whitesmoke;
-    padding: 10px;
-    background-color: rgb(30, 111, 233);
-    border-radius: 10px;
-    transition-duration: 0.3s;
-    text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-    
+    transition: color 0.3s;
 }
 
-.trabajo:hover{
-    background-color: rgb(48, 94, 163);
-    box-shadow: 0 0 7px rgb(204, 178, 130);
-    
+a.cta {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s;
 }
 
+a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* Estilo de sombra y degradado */
+.card:nth-child(2) {
+    background: linear-gradient(135deg, #ec4899, #6366f1);
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(135deg, #34d399, #3b82f6);
+}
+
+.card:nth-child(4) {
+    background: linear-gradient(135deg, #a855f7, #6366f1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card.large {
+        grid-column: span 1;
+    }
+}

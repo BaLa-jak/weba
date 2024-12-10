@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="estilo/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weba</title>
+    <title>Tarjetas de Interfaz</title>
+    <link rel="stylesheet" href="/weba/estilo/style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="#"><ion-icon name="logo-web-component" class="logo"></ion-icon></a>
-        <ul class="paginas">
-            <li><a href="#">about </a></li>
-            <li><a href="#">work</a></li>
-            <li><a href="#">experience</a></li>
-        </ul>
-    </nav>
-  </header>
-  
-<div class="maintext">
-    <p class="saludo">Hi, name is</p>
-    <h1 class="nombre">Yadid Rosell.</h1>  
-    <h1 class="span">I create your dreams</h1>
-  
-    <a href="#" class="trabajo">Check out my work</a>
-      
-</div>
- 
+    <div class="container">
+        <!-- Primera tarjeta grande -->
+        <div class="card large">
+            <div class="card-content">
+                <h2>One secure account for all your digital assets</h2>
+                <a href="#" class="cta">get started →</a>
+            </div>
+        </div>
 
+        <!-- Segunda tarjeta -->
+        <div class="card">
+            <div class="card-content">
+                <h3>Swap tokens & collectibles</h3>
+                <a href="#">dels.io →</a>
+            </div>
+        </div>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- Tercera tarjeta -->
+        <div class="card">
+            <div class="card-content">
+                <h3>Provide liquidity, earn rewards</h3>
+                <p>coming soon</p>
+            </div>
+        </div>
+
+        <!-- Cuarta tarjeta -->
+        <div class="card">
+            <div class="card-content">
+                <h3>Coming soon</h3>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
